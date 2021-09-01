@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+          <!-- <my-button></my-button>
+      <my-button></my-button>
+      <my-button></my-button> -->
+    <div id="app">
+      <my-button></my-button>
+    </div>
+
+    <script src="/dist/vue.js"></script>
+    <script>
+      Vue.component('my-button', {
+        template: '<button>外部按钮</button>'
+      })
+      const vm = new Vue({
+        el: '#app',
+        components: {
+          // 'my-button': {
+          //   template: '<button>内部按钮</button>'
+          // }
+        }
+      })
+    </script>
+  </body>
+</html>
